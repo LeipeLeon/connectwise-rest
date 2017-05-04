@@ -27,6 +27,7 @@ function FinanceAPI(options) {
   const _Agreements = require('./Agreements');
   const _AgreementSites = require('./AgreementSites');
   const _BoardDefaults = require('./BoardDefaults');
+  const _Invoices = require('./Invoices');
   const _WorkRoles = require('./WorkRoles');
   const _WorkTypeExclusions = require('./WorkTypeExclusions');
   const _WorkTypes = require('./WorkTypes');
@@ -37,6 +38,7 @@ function FinanceAPI(options) {
     Agreements: new _Agreements(options),
     AgreementSites: new _AgreementSites(options),
     BoardDefaults: new _BoardDefaults(options),
+    Invoices: new _Invoices(options),
     WorkRoles: new _WorkRoles(options),
     WorkTypeExclusions: new _WorkTypeExclusions(options),
     WorkTypes: new _WorkTypes(options)

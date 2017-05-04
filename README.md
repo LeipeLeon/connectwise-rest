@@ -121,6 +121,7 @@ To access cloud-hosted ConnectWise, use the `companyUrl` of `api-na.myconnectwis
 | Finance API      | Agreements          | Complete                      |
 | Finance API      | AgreementSites      | Complete                      |
 | Finance API      | BoardDefaults       | Complete                      |
+| Finance API      | Invoices            | In Progress                   |
 | Finance API      | WorkRoles           | Complete                      |
 | Finance API      | WorkTypeExclusions  | Complete                      |
 | Finance API      | WorkTypes           | Complete                      |
