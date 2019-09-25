@@ -49,9 +49,10 @@ CompanyTypeInfos.prototype.getCompanyTypeInfosCount = function (params) {
 /**
  *
  * @param id
+ * @param {Params} params
  * @returns {Promise<CompanyTypeInfo>}
  */
-CompanyTypeInfos.prototype.getCompanyTypeInfoById = function (id) {
+CompanyTypeInfos.prototype.getCompanyTypeInfoById = function (id, params) {
   return this.api(`/company/companies/info/types/${id}`, 'GET', params);
 };
 

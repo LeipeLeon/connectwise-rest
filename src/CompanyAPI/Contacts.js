@@ -186,9 +186,10 @@ Contacts.prototype.validatePortalCredentials = function (email, password) {
  * @param {string|number} id
  * @param {boolean} useDefaultFlag
  * @param {string} lastModified
+ * @param {Params} params
  * @returns {Promise<*>} @TODO check return type
  */
-Contacts.prototype.getContactImage = function (id, useDefaultFlag, lastModified) {
+Contacts.prototype.getContactImage = function (id, useDefaultFlag, lastModified, params) {
   return this.api(`/company/contacts/${id}/image`, 'GET', params);
 };
 

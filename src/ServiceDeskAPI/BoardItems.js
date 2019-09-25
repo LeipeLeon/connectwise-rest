@@ -68,9 +68,10 @@ BoardItems.prototype.getItemUsagesCount = function (boardId, itemId) {
  *
  * @param boardId
  * @param itemId
+ * @param {Params} params
  * @returns {Promise<Usage[]>}
  */
-BoardItems.prototype.getItemUsages = function (boardId, itemId) {
+BoardItems.prototype.getItemUsages = function (boardId, itemId, params) {
   return this.api(`/service/boards/${boardId}/items/${itemId}/usages/list`, 'GET', params);
 };
 

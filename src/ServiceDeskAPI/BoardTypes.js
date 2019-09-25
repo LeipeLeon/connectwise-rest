@@ -73,9 +73,10 @@ BoardTypes.prototype.getTypeUsagesCount = function (boardId, typeId) {
  *
  * @param boardId
  * @param typeId
+ * @param {Params} params
  * @returns {Promise<Usage[]>}
  */
-BoardTypes.prototype.getTypeUsages = function (boardId, typeId) {
+BoardTypes.prototype.getTypeUsages = function (boardId, typeId, params) {
   return this.api(`/service/boards/${boardId}/types/${typeId}/usages/list`, 'GET', params);
 };
 

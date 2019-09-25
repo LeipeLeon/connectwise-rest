@@ -138,7 +138,7 @@ Companies.prototype.updateCompany = function (id, ops) {
  * @TODO finish this one
  * @returns {Promise<*>}
  */
-Companies.prototype.mergeCompany = function () {
+Companies.prototype.mergeCompany = function (id, params) {
   return this.api(`/company/companies/${id}/merge`, 'POST', params);
 };
 

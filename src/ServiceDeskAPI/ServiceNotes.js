@@ -84,9 +84,10 @@ ServiceNotes.prototype.deleteServiceNoteById = function (ticketId, noteId) {
  *
  * @param ticketId
  * @param noteId
+ * @param {Params} params
  * @returns {Promise<ServiceNote>}
  */
-ServiceNotes.prototype.getServiceNoteById = function (ticketId, noteId) {
+ServiceNotes.prototype.getServiceNoteById = function (ticketId, noteId, params) {
   return this.api(`/service/tickets/${ticketId}/notes/${noteId}`, 'GET', params);
 };
 
